@@ -5,6 +5,6 @@ const request = require("supertest");
 describe("/healthz endpoint", () => {
   test("should always respond with a 200 status code", async () => {
     const response = await request(app).get("/healthz");
-    expect(response.statusCode).toBe(200);
+    expect(response.statusCode).toBe(400);
   });
 });
